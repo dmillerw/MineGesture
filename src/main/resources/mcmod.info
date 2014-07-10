@@ -1,0 +1,13 @@
+[
+{
+  "modid": "MineGesture",
+  "name": "MineGesture",
+  "description": "Mouse gestures for Minecraft",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "authors": [ "dmillerw" ],
+  "dependencies": [
+     "mod_MinecraftForge"
+  ]
+}
+]
