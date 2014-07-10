@@ -23,6 +23,10 @@ public class InputEventHandler {
 
 	@SubscribeEvent
 	public void onMouseEvent(InputEvent.MouseInputEvent event) {
+		if (Minecraft.getMinecraft().currentScreen != null || Minecraft.getMinecraft().theWorld == null) {
+			return;
+		}
+
 		if (Mouse.isButtonDown(2)) {
 			grabMouse(false);
 			InputEventHandler.detectingGesture = true;
